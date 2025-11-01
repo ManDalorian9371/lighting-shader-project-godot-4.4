@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://braf0fd7tmtmj"]
+
+[ext_resource type="Script" uid="uid://let8er3smdl4" path="res://Scripts/day_and_night.gd" id="1_ceafg"]
+[ext_resource type="Material" uid="uid://dyk7q1ra0l702" path="res://ligh.tres" id="2_nmuga"]
+[ext_resource type="Script" uid="uid://eucl7l3koe2w" path="res://Scripts/light_manager.gd" id="3_gn1at"]
+
+[node name="day_and_night" type="CanvasLayer"]
+script = ExtResource("1_ceafg")
+
+[node name="LightManager" type="ColorRect" parent="."]
+material = ExtResource("2_nmuga")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("3_gn1at")
